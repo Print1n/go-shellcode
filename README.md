@@ -1,5 +1,6 @@
 
 ## Base64
+进到`Base64`目录，里面有两个文件，分别为`main.go`、`Base64.go`
 首先将`Base64.go`里面的buf参数改为自己的shellcode内容
 ```go
 const (
@@ -12,4 +13,13 @@ go run Base64.go
 ```
 ![image](https://user-images.githubusercontent.com/73928418/123949478-324b7700-d9d5-11eb-9d4f-3699431c4cba.png)
 第一个参数是base64编码后的shellcode，第二个参数是随机替换的字符串，这两个参数待会都会用到
+在同目录下编译`main.go`
+```go
+go build -trimpath -ldflags="-w -s -H=windowsgui" -o main.exe main.go
+```
+![image](https://user-images.githubusercontent.com/73928418/124044542-3e205300-da40-11eb-8a9b-a66dd9ab0713.png)
+Cobalstrike上线
+![image](https://user-images.githubusercontent.com/73928418/124044579-54c6aa00-da40-11eb-9dc6-bdac33554ea2.png)
+
+
 
