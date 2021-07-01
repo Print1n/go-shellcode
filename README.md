@@ -11,7 +11,7 @@ const (
 go run Base64.go
 ```
 ![image](https://user-images.githubusercontent.com/73928418/123949478-324b7700-d9d5-11eb-9d4f-3699431c4cba.png)
-第一个参数是base64编码后的shellcode，第二个参数是随机替换的字符串，这两个参数待会都会用到。\n
+第一个参数是base64编码后的shellcode，第二个参数是随机替换的字符串，这两个参数待会都会用到<br/>
 在同目录下编译`main.go`
 ```go
 go build -trimpath -ldflags="-w -s -H=windowsgui" -o main.exe main.go
@@ -32,7 +32,7 @@ const (
 go run Aes.go
 ```
 ![image](https://user-images.githubusercontent.com/73928418/124045210-c3583780-da41-11eb-9da1-baacfb03404c.png)
-第一个参数是AES加密后的shellcode，第二个参数是加密密钥，这两个参数待会都会用到。
+第一个参数是AES加密后的shellcode，第二个参数是加密密钥，这两个参数待会都会用到<br/>
 在同目录下编译`main.go`
 ```go
 go build -trimpath -ldflags="-w -s -H=windowsgui" -o main.exe main.go
