@@ -1,4 +1,6 @@
 **目前两种方法都可以过火绒、360安全、360杀毒**
+
+
 ## Base64
 进到`Base64`目录，里面有两个文件，分别为`main.go`、`Base64.go`。首先将`Base64.go`里面的buf参数改为自己的shellcode内容
 ```go
@@ -54,3 +56,6 @@ func main() {
 	}
 }
 ```
+2. 两个文件编译后大概4M，用UPX压缩一下后，可以达到1.5M
+![image](https://user-images.githubusercontent.com/73928418/124045998-8a20c700-da43-11eb-924d-2eaf1b11b436.png)
+
