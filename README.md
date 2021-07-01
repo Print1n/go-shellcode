@@ -1,6 +1,6 @@
 **目前两种方法都可以过火绒、360安全、360杀毒**
-
-
+![image](https://user-images.githubusercontent.com/73928418/124046551-ca347980-da44-11eb-8a5f-42c695ff103e.png)
+![image](https://user-images.githubusercontent.com/73928418/124046605-e89a7500-da44-11eb-9ea3-50f9fe0d9aa7.png)
 ## Base64
 进到`Base64`目录，里面有两个文件，分别为`main.go`、`Base64.go`。首先将`Base64.go`里面的buf参数改为自己的shellcode内容
 ```go
